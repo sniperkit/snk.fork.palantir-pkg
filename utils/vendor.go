@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package utils
 
-import "path/filepath"
+import (
+	"path/filepath"
+)
 
 const (
 	VendorName    = "vendor"
@@ -59,7 +66,7 @@ type ArchivePackage struct {
 }
 
 func GetVendorPath(base string) string {
-	return filepath.Join(base, VendorName);
+	return filepath.Join(base, VendorName)
 }
 
 func GetPackageSrcPath(base, packageName string) (path string) {

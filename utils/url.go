@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package utils
 
-import "strings"
+import (
+	"strings"
+)
 
 func UrlJoin(base, ele string) string {
 	if !strings.HasSuffix(base, "/") {

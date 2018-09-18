@@ -1,10 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package utils
 
 import (
-	"path/filepath"
-	"os"
-	"io"
 	"archive/zip"
+	"io"
+	"os"
+	"path/filepath"
 )
 
 // FROM https://golangcode.com/unzip-files-in-go/

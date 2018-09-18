@@ -1,12 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package utils
 
 import (
-	"strings"
-	"path/filepath"
-	"os"
 	"io"
-	"os/exec"
 	"log"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"strings"
 )
 
 // run instruction.

@@ -1,23 +1,29 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package install
 
 import (
-	"github.com/genshen/pkg/utils"
-	"github.com/genshen/cmds"
-	"os"
+	"bufio"
+	"encoding/json"
+	"errors"
 	"flag"
-	"path/filepath"
 	"fmt"
+	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
-	"io"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4"
-	"io/ioutil"
-	"encoding/json"
+	"os"
+	"path/filepath"
 	"runtime"
-	"errors"
-	"bufio"
 	"strings"
+
+	"github.com/genshen/cmds"
+	"github.com/genshen/pkg/utils"
+	"gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/plumbing"
 )
 
 const (

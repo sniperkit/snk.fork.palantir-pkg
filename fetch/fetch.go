@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package fetch
 
 import (
-	"github.com/genshen/cmds"
 	"flag"
+
+	"github.com/genshen/cmds"
 )
 
 var fetchCommand = &cmds.Command{

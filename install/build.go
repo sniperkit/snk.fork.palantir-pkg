@@ -1,13 +1,19 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package install
 
 import (
 	"log"
+
 	"github.com/genshen/pkg/utils"
 )
 
 // build pkg from dependency tree.
 // pkgHome: the location of file pkg.json
-func buildPkg(dep *DependencyTree, pkgHome string,root bool, builtSet *map[string]bool) error {
+func buildPkg(dep *DependencyTree, pkgHome string, root bool, builtSet *map[string]bool) error {
 	// if this package has been built, skip it and its dependency.
 	if _, ok := (*builtSet)[dep.Context.PackageName]; ok {
 		return nil
@@ -17,7 +23,7 @@ func buildPkg(dep *DependencyTree, pkgHome string,root bool, builtSet *map[strin
 
 	// build children
 	for _, v := range dep.Dependency {
-		if err := buildPkg(v, pkgHome,false, builtSet); err != nil {
+		if err := buildPkg(v, pkgHome, false, builtSet); err != nil {
 			return err // break loop.
 		}
 	}

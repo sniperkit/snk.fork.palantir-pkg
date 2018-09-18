@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package install
 
 import (
 	"io"
 	"os"
+	"path/filepath"
 	"strings"
 	"text/template"
-	"path/filepath"
+
 	"github.com/genshen/pkg/utils"
 )
 

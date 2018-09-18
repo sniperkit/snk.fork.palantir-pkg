@@ -1,12 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package version
 
 import (
 	"flag"
 	"fmt"
+
 	"github.com/genshen/cmds"
 	"github.com/genshen/pkg/utils"
 )
-
 
 var versionCommand = &cmds.Command{
 	Name:        "version",
